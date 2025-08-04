@@ -560,8 +560,7 @@ def get_piper_gaussian_at_qpos(qpos, return_gripper=False):
     if len(robot_part_gaussian_origin_list) == 0:
         for i in range(9):
             robot_part_gaussian = GaussianModel(sh_degree=3)
-            # robot_part_gaussian.load_ply(f'/home/admin123/ssd/Xiangkon/TDGS/data/robot/gs/trans/link{i}.ply')
-            robot_part_gaussian.load_ply(f'/home/admin123/ssd/Xiangkon/TDGS/data/k1/link/trans/link{i}.ply')
+            robot_part_gaussian.load_ply(f'data/k1/link/trans/link{i}.ply')
             robot_part_gaussian_origin_list.append(robot_part_gaussian)
 
     T_all = robot.fkine_all(qpos)

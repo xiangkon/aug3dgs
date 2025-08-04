@@ -64,7 +64,7 @@ def edge_ssim_iou(edge1, edge2):
 
 def renderOneFrame(param, return_c2w=False):
 
-    camera_pose_file = "/home/admin123/ssd/Xiangkon/TDGS/data/camera_pose/piper_cam_pose.txt"
+    camera_pose_file = "data/camera_pose/piper_cam_pose.txt"
     c2w_1 = np.loadtxt(camera_pose_file)
     x, y, z, roll, pitch, yaw = param
     T = calculate_transformation_matrix(x, y, z, roll, pitch, yaw)
@@ -83,7 +83,7 @@ def renderOneFrame(param, return_c2w=False):
 
 
 def conputeImageSimilarityScore(param):
-    ground_truth_path = "/home/admin123/ssd/Xiangkon/TDGS/output/test_viewPointConsistency/real.jpg"
+    ground_truth_path = "output/test_viewPointConsistency/real.jpg"
     image_gs = renderOneFrame(param)
     image_ground = cv2.imread(ground_truth_path)
     edgeGs = edge_gs(image_gs)

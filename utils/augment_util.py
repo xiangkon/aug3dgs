@@ -99,8 +99,8 @@ def augment_lighting_for_scene(gaussian, scale_range_min=0.3, scale_range_max=1.
     return gaussian
 
 def get_camera_and_renderer():
-    c2w = np.loadtxt('/home/admin123/ssd/Xiangkon/TDGS/data/camera_pose/piper_front_cam_pose.txt')
-    c2w_1 = np.loadtxt('/home/admin123/ssd/Xiangkon/TDGS/data/camera_pose/piper_side_cam_pose.txt')
+    c2w = np.loadtxt('/home/admin123/ssd/Xiangkon/aug3dgs/data/camera_pose/piper_front_cam_pose.txt')
+    c2w_1 = np.loadtxt('/home/admin123/ssd/Xiangkon/aug3dgs/data/camera_pose/piper_side_cam_pose.txt')
 
     camera_0 = RealCamera(R=None, T=None, c2w=c2w, fovy=0.7515759938811762, fovx=0.9684658025776031, znear=0.1, zfar=10.0, image_size=[480, 640])
     renderer_0 = GaussianRenderer(camera_0, bg_color=[0.0, 0.0, 0.0])

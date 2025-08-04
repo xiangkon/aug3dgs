@@ -108,7 +108,7 @@ def poses_vis(pose_list, trans_mat=np.eye(4), pcd_scene=o3d.geometry.PointCloud(
 
 if __name__ == "__main__":
     # ********** you need to modify the dir include data procceed by colmap **********
-    dir_model = "/home/admin123/ssd/Xiangkon/TDGS/videos/piper76"
+    dir_model = "videos/piper76"
     dir_data = f"{dir_model}/sparse/0_ori"
     dir_data_new = f"{dir_model}/sparse/0"
     print(dir_data_new)

@@ -121,7 +121,7 @@ if __name__ == '__main__':
 
     # 旋转、 平移矩阵
     R_Camera2Base, T_Camera2Base = func()
-    save_path = "/home/admin123/ssd/Xiangkon/TDGS/data/camera_pose/piper_cam_pose.txt"
+    save_path = "/home/admin123/ssd/Xiangkon/aug3dgs/data/camera_pose/piper_cam_pose.txt"
     # 变换矩阵
     RT_Camera2Base = np.eye(4)
     RT_Camera2Base[0:3, 0:3] = R_Camera2Base

@@ -46,7 +46,7 @@ def trans_gaussian_robotPart2ori(path, qpos):
 
 if __name__ == '__main__':
 
-    path = "/home/admin123/ssd/Xiangkon/TDGS/data/robot/gs2"
+    path = "/home/admin123/ssd/Xiangkon/aug3dgs/data/robot/gs2"
     qpos = [0.0, 1.0, -1.0, 0.0, 0.0, 0.0, 0.05, 0.05]
     robot_gaussian = trans_gaussian_robotPart2ori(path, qpos)
     print("trans robot gaussian successfully!!!")
