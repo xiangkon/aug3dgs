@@ -1,4 +1,6 @@
 *.pyc
 .vscode
+*.so
+*.egg-info/
 gaussian-splatting/
 output/

@@ -1,0 +1,6 @@
+# ninja log v5
+0	1384	1754293904427513158	/home/admin123/ssd/Projects/aug3dgs/submodule/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/forward.o	e86762c0d39ed9a0
+0	1438	1754293904482515001	/home/admin123/ssd/Projects/aug3dgs/submodule/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/backward.o	105afb8cae760f27
+1	5084	1754293908126637109	/home/admin123/ssd/Projects/aug3dgs/submodule/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-310/cuda_rasterizer/rasterizer_impl.o	c8a740b349fc6519
+1	8373	1754293911412747221	/home/admin123/ssd/Projects/aug3dgs/submodule/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-310/ext.o	9c3f71a214416199
+2	27909	1754293930943401660	/home/admin123/ssd/Projects/aug3dgs/submodule/diff-gaussian-rasterization/build/temp.linux-x86_64-cpython-310/rasterize_points.o	71c5766e91d07e92
