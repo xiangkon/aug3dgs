@@ -68,18 +68,6 @@ def texture_gaussian_plane(gaussian_plane, height, width, image_path):
 
     return gaussian_plane
 
-gaussian_plane_ground, gaussian_plane_front, gaussian_plane_left, gaussian_plane_right = load_gaussian_plane()
-
-# def get_gaussian_plane(texture=False):
-#     global gaussian_plane_table, gaussian_plane_front, gaussian_plane_left, gaussian_plane_right
-#     if texture:
-#         image_dir = 'data/coco_train2017_subset'
-#         num_image = 20
-#         gaussian_plane_table = texture_gaussian_plane(gaussian_plane_table, 725, 600, f'{image_dir}/{str(np.random.randint(0, num_image)).zfill(6)}.jpg')
-#         gaussian_plane_front = texture_gaussian_plane(gaussian_plane_front, 750, 750, f'{image_dir}/{str(np.random.randint(0, num_image)).zfill(6)}.jpg')
-#         gaussian_plane_left = texture_gaussian_plane(gaussian_plane_left, 750, 825, f'{image_dir}/{str(np.random.randint(0, num_image)).zfill(6)}.jpg')
-#         gaussian_plane_right = texture_gaussian_plane(gaussian_plane_right, 750, 825, f'{image_dir}/{str(np.random.randint(0, num_image)).zfill(6)}.jpg')
-
 #     return gaussian_plane_table, gaussian_plane_front, gaussian_plane_left, gaussian_plane_right
 
 def get_gaussian_plane(texture=False):

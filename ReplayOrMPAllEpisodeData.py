@@ -178,7 +178,7 @@ def main(demo_Dir, output_path, augment_camera_pose, motionPlanning, visualize, 
 
             # 加载橙子的 3DGS 模型
             orange_gaussian_ori = GaussianModel(sh_degree=3)
-            orange_gaussian_ori.load_ply('data/asset/orange.ply')
+            orange_gaussian_ori.load_ply('data/k1/orange.ply')
 
 
             # 第一阶段的 orange 高斯模型
