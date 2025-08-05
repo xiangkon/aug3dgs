@@ -1,0 +1,17 @@
+services:
+  konyue:
+    build: .
+    image: aug3dgs:v1.5 
+    runtime: nvidia
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=all
+    volumes:
+      - .:/workspace/aug3dgs
+      - ./data/dataset:/data/dataset
+      - /home/admin123/ssd/Xiangkon/TDGS/videos:/data/videos
+    ports:
+      - "6009:6009"
+    working_dir: /workspace/aug3dgs
+    command: ["tail", "-f", "/dev/null"]  # 修改 command
+    tty: true  # 确保分配一个伪终端
+    stdin_open: true  # 确保标准输入打开

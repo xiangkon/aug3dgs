@@ -300,7 +300,7 @@ def main(demo_Dir, output_path, augment_camera_pose, motionPlanning, visualize, 
 
 
 output_path = 'output/bg_aug'
-demo_Dir = '/home/admin123/ssd/Xiangkon/TDGS/data/render_randomization_data'
+demo_Dir = '/data/dataset'
 motionPlanning = True
 visualize = False # TO DO 改为并行显示
 augment_lighting = False

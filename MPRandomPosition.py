@@ -282,7 +282,7 @@ def main(demo_Dir, output_path, change_camera_pose, visualize, position_aug):
 
 output_path = 'output/random_position/random_position_MP2'
 change_camera_pose = False
-demo_Dir = '/home/admin123/ssd/Xiangkon/TDGS/data/placement_aug'
+demo_Dir = '/data/dataset/000007.h5'
 visualize = False
 position_aug = True
 
