@@ -1,5 +1,6 @@
 # aug3dgs
 
+# 方法一：普通安装
 ## 安装仓库
 ```bash
 git clone https://github.com/xiangkon/aug3dgs.git
@@ -40,4 +41,14 @@ git clone https://github.com/graphdeco-inria/gaussian-splatting --recursive
 ```bash
 pip install gaussian-splatting/submodules/simple-knn
 pip install gaussian-splatting/submodules/fused-ssim
+```
+
+# 方法二：Docker安装
+
+## 安装仓库
+```bash
+git clone https://github.com/xiangkon/aug3dgs.git
+cd aug3dgs
+docker build -t aug3dgs:latest .
+docker compose -f docker-compose.yml up -d
 ```
