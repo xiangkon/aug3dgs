@@ -8,7 +8,7 @@ import open3d as o3d
 abs_path = os.path.abspath(__file__)
 sys.path.append(os.path.dirname(abs_path) + "/..")
 
-from read_write_model import (
+from utils.read_write_model import (
     read_model,
     write_model,
     Point3D,
