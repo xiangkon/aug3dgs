@@ -197,7 +197,7 @@ def main(demo_Dir, output_path, augment_camera_pose, motionPlanning, visualize, 
             
             # print("---------------------------------------------------------------")
             for i in range(len(qpos_list)):
-                # 第一段 机器人靠近抓取物体
+                # 第一、二段 机器人靠近抓取物体
                 if i < key_frames[0]:
                     qpos = qpos_list[i]
                     qpos[-2:] = qpos[-2:] + GraspCompensation
@@ -211,7 +211,7 @@ def main(demo_Dir, output_path, augment_camera_pose, motionPlanning, visualize, 
                     gaussian_all = GaussianModel(sh_degree=3)
                     gaussian_all.compose([table_gaussian, bowl_gaussian, orange_gaussian_s1, robot_gaussian])
                     
-                # 第二段 机器人抓取并放置
+                # 第三段 机器人抓取并放置
                 elif i < key_frames[1]:
                     qpos = qpos_list[i]
                     # print("第二段 机器人抓取并放置")
@@ -229,7 +229,7 @@ def main(demo_Dir, output_path, augment_camera_pose, motionPlanning, visualize, 
                     gaussian_all = GaussianModel(sh_degree=3)
                     gaussian_all.compose([table_gaussian, bowl_gaussian, orange_gaussian_s2, robot_gaussian])
                 
-                # 第三段 机器人放置物体后复位
+                # 第四、五段 机器人放置物体后复位
                 elif i < key_frames[1]+210:
                     qpos = qpos_list[i]
 
